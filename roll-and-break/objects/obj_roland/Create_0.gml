@@ -1,6 +1,7 @@
 enum rolandState {
 	ready,
-	rolling
+	rolling,
+	falling
 }
 enum rollDir {
 	d,
@@ -94,4 +95,11 @@ function handleRollDirectionInput() {
 			case  1: dir = rollDir.dr; break;
 		}
 	}
+}
+
+function stopMoving() {
+	phy_linear_velocity_x = 0;
+	phy_linear_velocity_y = 0;
+	phy_speed_x = 0;
+	phy_speed_y = 0;
 }

@@ -11,6 +11,15 @@ switch (state) {
 			var tileX = x div tile_width;
 			var tileY = y div tile_height;
 			obj_tile_style_manager.markTileAsBroken(tileX, tileY);
+		} else if (currentTile == 0) {
+			// Falling!
+			state = rolandState.falling;
+			image_speed = 1;
 		}
+	} break;
+	case rolandState.falling: {
+		sprite_index = spr_roland_fall;
+		obj_gamemgr.phase = gamePhase.dying;
+		stopMoving();
 	} break;
 }

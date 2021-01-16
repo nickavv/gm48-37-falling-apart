@@ -17,8 +17,8 @@
     {"id":{"name":"spr_roland_start","path":"sprites/spr_roland_start/spr_roland_start.yy",},"order":9,},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":4,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":2,},
-    {"id":{"name":"spr_ui_bad","path":"sprites/spr_ui_bad/spr_ui_bad.yy",},"order":3,},
-    {"id":{"name":"spr_ui_too","path":"sprites/spr_ui_too/spr_ui_too.yy",},"order":2,},
+    {"id":{"name":"spr_ui_go_bad","path":"sprites/spr_ui_go_bad/spr_ui_go_bad.yy",},"order":3,},
+    {"id":{"name":"spr_ui_go_too","path":"sprites/spr_ui_go_too/spr_ui_go_too.yy",},"order":2,},
     {"id":{"name":"obj_gamemgr","path":"objects/obj_gamemgr/obj_gamemgr.yy",},"order":5,},
     {"id":{"name":"sound_crumble","path":"sounds/sound_crumble/sound_crumble.yy",},"order":1,},
     {"id":{"name":"ts_grassland","path":"tilesets/ts_grassland/ts_grassland.yy",},"order":0,},
@@ -35,6 +35,7 @@
     {"id":{"name":"spr_roland_roll_ul","path":"sprites/spr_roland_roll_ul/spr_roland_roll_ul.yy",},"order":6,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":7,},
     {"id":{"name":"spr_goal_broke","path":"sprites/spr_goal_broke/spr_goal_broke.yy",},"order":5,},
+    {"id":{"name":"spr_roland_fall","path":"sprites/spr_roland_fall/spr_roland_fall.yy",},"order":10,},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":0,},
   ],
   "Options": [
