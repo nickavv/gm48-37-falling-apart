@@ -16,6 +16,7 @@
     {"id":{"name":"spr_roland_shadow","path":"sprites/spr_roland_shadow/spr_roland_shadow.yy",},"order":8,},
     {"id":{"name":"spr_roland_start","path":"sprites/spr_roland_start/spr_roland_start.yy",},"order":9,},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":4,},
+    {"id":{"name":"spr_roland_celebrate","path":"sprites/spr_roland_celebrate/spr_roland_celebrate.yy",},"order":11,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":2,},
     {"id":{"name":"spr_ui_go_bad","path":"sprites/spr_ui_go_bad/spr_ui_go_bad.yy",},"order":3,},
     {"id":{"name":"spr_ui_go_too","path":"sprites/spr_ui_go_too/spr_ui_go_too.yy",},"order":2,},

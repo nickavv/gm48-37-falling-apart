@@ -22,4 +22,8 @@ switch (state) {
 		obj_gamemgr.phase = gamePhase.dying;
 		stopMoving();
 	} break;
+	case rolandState.goal: {
+		sprite_index = spr_roland_celebrate;
+		stopMoving();
+	}
 }
