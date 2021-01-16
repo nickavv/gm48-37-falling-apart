@@ -20,4 +20,5 @@ brokenDirt = 42;
 function markTileAsBroken(tileX, tileY) {
 	tileBreakTimers[tileX, tileY] = tileBreakTime;
 	tilemap_set(groundLayer, brokenGrass, tileX, tileY);
+	audio_play_sound(sound_weaken, 1, false);
 }

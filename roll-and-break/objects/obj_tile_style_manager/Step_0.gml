@@ -23,6 +23,7 @@ for (var cellX = 0; cellX < (room_width div tile_width); cellX ++) {
 			tileBreakTimers[cellX, cellY] -= 1;
 			if (tileBreakTimers[cellX, cellY] == 0) {
 				tilemap_set(groundLayer, 0, cellX, cellY);
+				audio_play_sound(sound_crumble, 1, false);
 			}
 		}
 	}
