@@ -132,8 +132,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4d18ec46-8dd0-4d8c-9d6a-a6b560473997","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Elements",
+    "path": "folders/Sprites/Level Elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_coin_get",

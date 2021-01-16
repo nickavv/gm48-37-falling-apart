@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e943f43-c4c1-49cf-8d73-252c73809a1b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Elements",
+    "path": "folders/Sprites/Level Elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_goal_broke",

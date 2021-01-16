@@ -280,8 +280,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8c30b0b1-ea5a-4e23-bc8c-c7e7af1c688f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Roland",
+    "path": "folders/Sprites/Roland.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_roland_start",

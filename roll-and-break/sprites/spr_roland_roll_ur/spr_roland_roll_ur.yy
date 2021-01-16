@@ -172,8 +172,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f80aa758-aec4-4db0-b13b-ff8b3e20e4a4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Roland",
+    "path": "folders/Sprites/Roland.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_roland_roll_ur",

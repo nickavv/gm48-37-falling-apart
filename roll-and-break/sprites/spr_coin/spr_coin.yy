@@ -100,8 +100,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"825d82ad-c659-4237-b891-c98ca54082e7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Elements",
+    "path": "folders/Sprites/Level Elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_coin",
