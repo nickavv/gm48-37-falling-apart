@@ -1,16 +1,25 @@
 {
   "resources": [
+    {"id":{"name":"constants","path":"scripts/constants/constants.yy",},"order":1,},
+    {"id":{"name":"scr_utilities","path":"scripts/scr_utilities/scr_utilities.yy",},"order":0,},
     {"id":{"name":"spr_roland_roll_r","path":"sprites/spr_roland_roll_r/spr_roland_roll_r.yy",},"order":3,},
+    {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":10,},
     {"id":{"name":"spr_roland_roll_d","path":"sprites/spr_roland_roll_d/spr_roland_roll_d.yy",},"order":1,},
     {"id":{"name":"obj_roland","path":"objects/obj_roland/obj_roland.yy",},"order":0,},
     {"id":{"name":"spr_roland_roll_u","path":"sprites/spr_roland_roll_u/spr_roland_roll_u.yy",},"order":5,},
     {"id":{"name":"spr_roland_roll_dl","path":"sprites/spr_roland_roll_dl/spr_roland_roll_dl.yy",},"order":8,},
     {"id":{"name":"spr_roland_roll_ur","path":"sprites/spr_roland_roll_ur/spr_roland_roll_ur.yy",},"order":4,},
+    {"id":{"name":"spr_ts_grassland","path":"sprites/spr_ts_grassland/spr_ts_grassland.yy",},"order":1,},
+    {"id":{"name":"spr_roland_shadow","path":"sprites/spr_roland_shadow/spr_roland_shadow.yy",},"order":9,},
     {"id":{"name":"spr_roland_start","path":"sprites/spr_roland_start/spr_roland_start.yy",},"order":0,},
+    {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":2,},
+    {"id":{"name":"ts_grassland","path":"tilesets/ts_grassland/ts_grassland.yy",},"order":0,},
     {"id":{"name":"spr_roland_roll_dr","path":"sprites/spr_roland_roll_dr/spr_roland_roll_dr.yy",},"order":2,},
+    {"id":{"name":"obj_tile_style_manager","path":"objects/obj_tile_style_manager/obj_tile_style_manager.yy",},"order":1,},
     {"id":{"name":"spr_roland_roll_l","path":"sprites/spr_roland_roll_l/spr_roland_roll_l.yy",},"order":7,},
     {"id":{"name":"spr_roland_roll_ul","path":"sprites/spr_roland_roll_ul/spr_roland_roll_ul.yy",},"order":6,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":11,},
+    {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -26,7 +35,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

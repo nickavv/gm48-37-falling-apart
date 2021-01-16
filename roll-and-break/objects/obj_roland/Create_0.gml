@@ -14,6 +14,8 @@ enum rollDir {
 }
 state = rolandState.ready;
 dir = rollDir.d;
+rollForce = 2;
+antiSlipForce = 2.5;
 
 function getRollSprite() {
 	switch (dir) {
@@ -34,19 +36,43 @@ function handleRollDirectionInput() {
 	var vStick = 0;
 	if (keyboard_check(vk_left)) {
 		hStick = -1;
+		var forceAmt = -rollForce
+		if (phy_speed_x > 0) {
+			forceAmt -= antiSlipForce;
+		}
+		physics_apply_local_force(0, 0, forceAmt, 0);
 	} else if (keyboard_check(vk_right)) {
 		hStick = 1;
+		var forceAmt = rollForce
+		if (phy_speed_x < 0) {
+			forceAmt += antiSlipForce;
+		}
+		physics_apply_local_force(0, 0, forceAmt, 0);
 	}
 	if (keyboard_check(vk_up)) {
 		vStick = -1;
+		var forceAmt = -rollForce;
+		if (phy_speed_y > 0) {
+			forceAmt -= antiSlipForce;
+		}
+		physics_apply_local_force(0, 0, 0, forceAmt);
 	} else if (keyboard_check(vk_down)) {
 		vStick = 1;
+		var forceAmt = rollForce;
+		if (phy_speed_y < 0) {
+			forceAmt += antiSlipForce;
+		}
+		physics_apply_local_force(0, 0, 0, forceAmt);
 	}
 	
 	if (hStick == -1) {
 		switch (vStick) {
 			case -1: dir = rollDir.ul; break;
-			case  0: dir = rollDir.l; break;
+			case  0: dir = rollDir.l;
+					 if (phy_speed_y != 0) {
+						physics_apply_local_force(0, 0, 0, (-1 * sign(phy_speed_y)) * antiSlipForce);
+					 } 
+					 break;
 			case  1: dir = rollDir.dl; break;
 		}
 	} else if (hStick == 0) {
@@ -54,10 +80,17 @@ function handleRollDirectionInput() {
 			case -1: dir = rollDir.u; break;
 			case  1: dir = rollDir.d; break;
 		}
+		if (phy_speed_x != 0) {
+			physics_apply_local_force(0, 0, (-1 * sign(phy_speed_x)) * antiSlipForce, 0);
+		} 
 	} else if (hStick == 1) {
 		switch (vStick) {
 			case -1: dir = rollDir.ur; break;
-			case  0: dir = rollDir.r; break;
+			case  0: dir = rollDir.r; 
+					 if (phy_speed_y != 0) {
+						physics_apply_local_force(0, 0, 0, (-1 * sign(phy_speed_y)) * antiSlipForce);
+					 } 
+					 break;
 			case  1: dir = rollDir.dr; break;
 		}
 	}
