@@ -16,8 +16,8 @@ enum rollDir {
 }
 state = rolandState.ready;
 dir = rollDir.d;
-rollForce = 2;
-antiSlipForce = 2.5;
+rollForce = 2.1;
+antiSlipForce = 2.7;
 previousState = state;
 stateChanged = false;
 

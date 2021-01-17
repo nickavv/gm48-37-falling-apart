@@ -75,6 +75,10 @@ if (phase == gamePhase.ready) {
 		}
 	}
 	
+	if (phaseFrame == 120 && coinsCollected == 3) {
+		audio_play_sound(sound_vo_great, 1, false);
+	}
+	
 	if (phaseFrame > 140) {
 		var mPhaseFrame = phaseFrame - 140;
 		draw_set_font(font_results);
@@ -85,14 +89,15 @@ if (phase == gamePhase.ready) {
 	}
 	
 	if (phaseFrame > 200) {
-		var totalScore = (timeRemaining / game_get_speed(gamespeed_fps)) * coinsCollected;
-		draw_text(300, 440, "Level Score: " + string(floor(totalScore)));
+		var totalScore = floor((timeRemaining / game_get_speed(gamespeed_fps)) * coinsCollected);
+		draw_text(300, 440, "Level Score: " + string(totalScore));
 	}
 	
 	if (phaseFrame > 220) {
 		draw_set_halign(fa_center);
 		draw_set_font(font_timer);
-		draw_text(SCREEN_W_HALF, 640, "PRESS A TO CONTINUE");
+		draw_text(SCREEN_W_HALF, 600, "PRESS A TO CONTINUE");
+		draw_text(SCREEN_W_HALF, 640, "PRESS B TO RETRY");
 		draw_set_halign(fa_left);
 	}
 } else if (phase == gamePhase.playing) {

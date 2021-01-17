@@ -13,7 +13,7 @@
   "physicsShape": 0,
   "physicsGroup": 1,
   "physicsDensity": 0.0,
-  "physicsRestitution": 0.1,
+  "physicsRestitution": 3.0,
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
@@ -21,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":130.0,"y":169.0,},
-    {"x":37.0,"y":169.0,},
+    {"x":40.0,"y":169.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_roland","path":"objects/obj_roland/obj_roland.yy",},"parent":{"name":"obj_bumper","path":"objects/obj_bumper/obj_bumper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

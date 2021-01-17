@@ -15,6 +15,8 @@ phaseFrame = 0;
 coinsCollected = 0;
 timeRemaining = 0;
 
+levelScores = [];
+
 function drawGameHud() {
 	for (var i = 0; i < 3; i++) {
 		var coinIcon = spr_ui_coin_got;
