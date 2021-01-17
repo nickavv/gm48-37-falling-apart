@@ -10,7 +10,7 @@
   "parentObjectId": null,
   "physicsObject": true,
   "physicsSensor": true,
-  "physicsShape": 1,
+  "physicsShape": 0,
   "physicsGroup": 1,
   "physicsDensity": 0.0,
   "physicsRestitution": 0.1,
@@ -20,10 +20,8 @@
   "physicsStartAwake": false,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":135.0,"y":0.0,},
-    {"x":135.0,"y":139.0,},
-    {"x":0.0,"y":139.0,},
+    {"x":70.0,"y":60.0,},
+    {"x":37.0,"y":60.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_roland","path":"objects/obj_roland/obj_roland.yy",},"parent":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

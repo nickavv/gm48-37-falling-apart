@@ -1,28 +1,14 @@
 phaseFrame += 1;
 if (phase == gamePhase.playing) {
 	timeRemaining -= 1;
-}
-
-// reset controller axis held variable
-if (xAxisHeld) {
-	var anyHeldX = false;
-	for (var i = 0; i < array_length(connectedGamepads); i++) {
-		var gamepadId = connectedGamepads[i];
-		if (abs(gamepad_axis_value(gamepadId, gp_axislh)) > 0.5) {
-			anyHeldX = true;
-			break;
+} else if (phase == gamePhase.results) {
+	if (check_input(ord("A"), gp_face1, true)) {
+		if (phaseFrame < 220) {
+			// Skip to end of results
+			phaseFrame = 220;
+		} else {
+			// Go to next level
+			room_goto(obj_level_data.nextLevel);
 		}
 	}
-	xAxisHeld = anyHeldX;
-}
-if (yAxisHeld) {
-	var anyHeldY = false;
-	for (var i = 0; i < array_length(connectedGamepads); i++) {
-		var gamepadId = connectedGamepads[i];
-		if (abs(gamepad_axis_value(gamepadId, gp_axislv)) > 0.5) {
-			anyHeldY = true;
-			break;
-		}
-	}
-	yAxisHeld = anyHeldY;
 }

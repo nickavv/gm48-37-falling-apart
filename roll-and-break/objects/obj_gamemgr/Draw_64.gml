@@ -70,11 +70,31 @@ if (phase == gamePhase.ready) {
 				if (phaseFrame == (60 + (20 * i))) {
 					audio_play_sound(sfx, 1, false);
 				}
-				draw_sprite(coinIcon, 0, SCREEN_W_HALF - 140 + (96 * i), SCREEN_H_HALF - 100);
+				draw_sprite(coinIcon, 0, SCREEN_W_HALF - 140 + (96 * i), SCREEN_H_HALF - 170);
 			}
 		}
 	}
 	
+	if (phaseFrame > 140) {
+		var mPhaseFrame = phaseFrame - 140;
+		draw_set_font(font_results);
+		draw_set_color(c_white);
+		draw_text(300, 390, "Time Remaining: ");
+		var displayTime = min(mPhaseFrame * 30, timeRemaining);
+		draw_text(560, 390, string_format(displayTime / game_get_speed(gamespeed_fps), 2, 1));
+	}
+	
+	if (phaseFrame > 200) {
+		var totalScore = (timeRemaining / game_get_speed(gamespeed_fps)) * coinsCollected;
+		draw_text(300, 440, "Level Score: " + string(floor(totalScore)));
+	}
+	
+	if (phaseFrame > 220) {
+		draw_set_halign(fa_center);
+		draw_set_font(font_timer);
+		draw_text(SCREEN_W_HALF, 640, "PRESS A TO CONTINUE");
+		draw_set_halign(fa_left);
+	}
 } else if (phase == gamePhase.playing) {
 	drawGameHud();
 }
