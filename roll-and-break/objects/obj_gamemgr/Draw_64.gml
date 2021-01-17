@@ -23,7 +23,11 @@ if (phase == gamePhase.ready) {
 		audio_play_sound(sound_vo_goal, 1, false);
 	}
 	draw_sprite(spr_ui_goal, 0, SCREEN_W_HALF, msgY);
-} else if (phase = gamePhase.dying) {
+	
+	if (phaseFrame > 160) {
+		phase = gamePhase.results;
+	}
+} else if (phase == gamePhase.dying) {
 	var msgAY = SCREEN_H_HALF;
 	var msgBY = SCREEN_H_HALF;
 	// Too
@@ -50,4 +54,25 @@ if (phase == gamePhase.ready) {
 		phase = gamePhase.ready;
 		room_restart();
 	}
+} else if (phase == gamePhase.results) {
+	draw_set_alpha(min(1, phaseFrame/30));
+	draw_sprite(spr_result_screen_bg, 0, 0, 0);
+	
+	if (phaseFrame > 60) {
+		for (var i = 0; i < 3; i++) {
+			if (phaseFrame >= (60 + (20 * i))) {
+				var coinIcon = spr_ui_coin_got;
+				if (coinsCollected < i + 1) {
+					if (phaseFrame == (60 + (20 * i))) {
+						audio_play_sound(sound_coin, 1, false);
+					}
+					coinIcon = spr_ui_coin_slot;
+				}
+				draw_sprite(coinIcon, 0, SCREEN_W_HALF - 140 + (96 * i), SCREEN_H_HALF - 100);
+			}
+		}
+	}
+	
+} else if (phase == gamePhase.playing) {
+	drawGameHud();
 }

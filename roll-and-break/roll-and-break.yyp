@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_ui_coin_slot","path":"sprites/spr_ui_coin_slot/spr_ui_coin_slot.yy",},"order":7,},
     {"id":{"name":"constants","path":"scripts/constants/constants.yy",},"order":1,},
     {"id":{"name":"scr_utilities","path":"scripts/scr_utilities/scr_utilities.yy",},"order":0,},
     {"id":{"name":"spr_roland_roll_r","path":"sprites/spr_roland_roll_r/spr_roland_roll_r.yy",},"order":4,},
@@ -31,6 +32,7 @@
     {"id":{"name":"sound_coin","path":"sounds/sound_coin/sound_coin.yy",},"order":0,},
     {"id":{"name":"spr_bg_clouds","path":"sprites/spr_bg_clouds/spr_bg_clouds.yy",},"order":0,},
     {"id":{"name":"spr_ui_ready","path":"sprites/spr_ui_ready/spr_ui_ready.yy",},"order":0,},
+    {"id":{"name":"font_results","path":"fonts/font_results/font_results.yy",},"order":0,},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},"order":1,},
     {"id":{"name":"spr_tutorial_movement","path":"sprites/spr_tutorial_movement/spr_tutorial_movement.yy",},"order":4,},
     {"id":{"name":"obj_tutorial_movement","path":"objects/obj_tutorial_movement/obj_tutorial_movement.yy",},"order":7,},
@@ -43,6 +45,7 @@
     {"id":{"name":"obj_tile_style_manager","path":"objects/obj_tile_style_manager/obj_tile_style_manager.yy",},"order":1,},
     {"id":{"name":"spr_roland_roll_l","path":"sprites/spr_roland_roll_l/spr_roland_roll_l.yy",},"order":3,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":3,},
+    {"id":{"name":"spr_ui_coin_got","path":"sprites/spr_ui_coin_got/spr_ui_coin_got.yy",},"order":8,},
     {"id":{"name":"spr_coin_get","path":"sprites/spr_coin_get/spr_coin_get.yy",},"order":2,},
     {"id":{"name":"sound_vo_goal","path":"sounds/sound_vo_goal/sound_vo_goal.yy",},"order":4,},
     {"id":{"name":"spr_roland_roll_ul","path":"sprites/spr_roland_roll_ul/spr_roland_roll_ul.yy",},"order":6,},
@@ -51,6 +54,7 @@
     {"id":{"name":"sound_vo_fall","path":"sounds/sound_vo_fall/sound_vo_fall.yy",},"order":6,},
     {"id":{"name":"spr_goal_broke","path":"sprites/spr_goal_broke/spr_goal_broke.yy",},"order":5,},
     {"id":{"name":"spr_roland_fall","path":"sprites/spr_roland_fall/spr_roland_fall.yy",},"order":10,},
+    {"id":{"name":"spr_result_screen_bg","path":"sprites/spr_result_screen_bg/spr_result_screen_bg.yy",},"order":6,},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":0,},
   ],
   "Options": [
