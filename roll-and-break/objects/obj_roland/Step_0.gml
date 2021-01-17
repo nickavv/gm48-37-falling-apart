@@ -18,11 +18,17 @@ switch (state) {
 		}
 	} break;
 	case rolandState.falling: {
+		if (stateChanged) {
+			audio_play_sound(sound_roland_fall, 2, false);
+		}
 		sprite_index = spr_roland_fall;
 		obj_gamemgr.phase = gamePhase.dying;
 		stopMoving();
 	} break;
 	case rolandState.goal: {
+		if (stateChanged) {
+			audio_play_sound(sound_roland_goal, 2, false);
+		}
 		sprite_index = spr_roland_celebrate;
 		stopMoving();
 	}

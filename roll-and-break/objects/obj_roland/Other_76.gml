@@ -4,4 +4,5 @@ switch (event_data[? "message"]) {
 				     	  physics_apply_local_force(0, 0, 0, 3 * rollForce);
 						  break;
 	case "fall_done": image_speed = 0; break;
+	case "ready_sfx": audio_play_sound(sound_roland_ready, 2, false); break;
 }

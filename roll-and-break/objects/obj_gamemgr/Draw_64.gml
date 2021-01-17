@@ -5,6 +5,9 @@ if (phase == gamePhase.ready) {
 	} else if (phaseFrame > 70) {
 		msgY = lerp(SCREEN_H_HALF, SCREEN_HEIGHT + 150, (phaseFrame - 70)/30);
 	}
+	if (phaseFrame == 20) {
+		audio_play_sound(sound_vo_ready, 1, false);
+	}
 	draw_sprite(spr_ui_ready, 0, SCREEN_W_HALF, msgY);
 	if (phaseFrame > 90) {
 		phase = gamePhase.playing;
@@ -15,6 +18,9 @@ if (phase == gamePhase.ready) {
 		msgY = lerp(-150, SCREEN_H_HALF, phaseFrame/40);
 	} else if (phaseFrame > 90) {
 		msgY = lerp(SCREEN_H_HALF, SCREEN_HEIGHT + 150, (phaseFrame - 90)/30);
+	}
+	if (phaseFrame == 20) {
+		audio_play_sound(sound_vo_goal, 1, false);
 	}
 	draw_sprite(spr_ui_goal, 0, SCREEN_W_HALF, msgY);
 } else if (phase = gamePhase.dying) {
@@ -35,6 +41,10 @@ if (phase == gamePhase.ready) {
 		msgBY = lerp(SCREEN_H_HALF, SCREEN_HEIGHT + 150, (phaseFrame - 90)/60);
 	}
 	draw_sprite(spr_ui_go_bad, 0, SCREEN_WIDTH * 0.66, msgBY);
+	
+	if (phaseFrame == 20) {
+		audio_play_sound(sound_vo_fall, 1, false);
+	}
 	
 	if (phaseFrame > 220) {
 		phase = gamePhase.ready;

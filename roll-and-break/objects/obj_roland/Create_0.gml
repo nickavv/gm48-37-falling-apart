@@ -18,6 +18,8 @@ state = rolandState.ready;
 dir = rollDir.d;
 rollForce = 2;
 antiSlipForce = 2.5;
+previousState = state;
+stateChanged = false;
 
 function getRollSprite() {
 	switch (dir) {
