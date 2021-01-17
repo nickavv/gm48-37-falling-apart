@@ -36,7 +36,7 @@ if (phase == gamePhase.ready) {
 	} else if (phaseFrame > 90) {
 		msgAY = lerp(SCREEN_H_HALF, SCREEN_HEIGHT + 150, (phaseFrame - 90)/60);
 	}
-	draw_sprite(spr_ui_go_too, 0, SCREEN_WIDTH * 0.33, msgAY);
+	draw_sprite(spr_ui_go_too, 0, SCREEN_WIDTH * 0.33 + 20, msgAY);
 	// Bad
 	var mPhaseFrame = max(0, phaseFrame - 40);
 	if (mPhaseFrame < 30) {
@@ -44,7 +44,7 @@ if (phase == gamePhase.ready) {
 	} else if (phaseFrame > 90) {
 		msgBY = lerp(SCREEN_H_HALF, SCREEN_HEIGHT + 150, (phaseFrame - 90)/60);
 	}
-	draw_sprite(spr_ui_go_bad, 0, SCREEN_WIDTH * 0.66, msgBY);
+	draw_sprite(spr_ui_go_bad, 0, SCREEN_WIDTH * 0.66 - 20, msgBY);
 	
 	if (phaseFrame == 20) {
 		audio_play_sound(sound_vo_fall, 1, false);

@@ -1,6 +1,6 @@
 phaseFrame += 1;
 if (phase == gamePhase.playing) {
-	timeRemaining -= 1;
+	timeRemaining = max(timeRemaining - 1, 0);
 } else if (phase == gamePhase.goal) {
 	audio_stop_sound(music_level);	
 } else if (phase == gamePhase.results) {
