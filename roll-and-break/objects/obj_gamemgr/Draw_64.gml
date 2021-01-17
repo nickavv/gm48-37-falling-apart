@@ -96,10 +96,12 @@ if (phase == gamePhase.ready) {
 	if (phaseFrame > 220) {
 		draw_set_halign(fa_center);
 		draw_set_font(font_timer);
-		draw_text(SCREEN_W_HALF, 600, "PRESS A TO CONTINUE");
+		draw_text(SCREEN_W_HALF, 590, "PRESS A TO CONTINUE");
 		draw_text(SCREEN_W_HALF, 640, "PRESS B TO RETRY");
 		draw_set_halign(fa_left);
 	}
+	
+	draw_set_alpha(1);
 } else if (phase == gamePhase.playing) {
 	drawGameHud();
 }

@@ -13,7 +13,7 @@
   "physicsShape": 0,
   "physicsGroup": 1,
   "physicsDensity": 0.0,
-  "physicsRestitution": 3.0,
+  "physicsRestitution": 2.0,
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
