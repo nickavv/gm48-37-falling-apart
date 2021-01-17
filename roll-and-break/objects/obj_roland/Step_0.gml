@@ -6,14 +6,12 @@ switch (state) {
 		handleRollDirectionInput();
 		sprite_index = getRollSprite();
 		image_speed = clamp(phy_speed/5, 0, 1);
-		var tileYOffset = y + 45;
-		if (dir == rollDir.d || dir == rollDir.dl || dir == rollDir.dr) {
-			tileYOffset = y;
-		}
-		var currentTile = tilemap_get_at_pixel(layer_tilemap_get_id(layer_get_id("Tiles_Ground")), x, tileYOffset);
+		var tileYOffset = y + 25 - (6 * phy_speed_y);
+		var tileXOffset = x - (6 * phy_speed_x);
+		var currentTile = tilemap_get_at_pixel(layer_tilemap_get_id(layer_get_id("Tiles_Ground")), tileXOffset, tileYOffset);
 		if (currentTile == obj_tile_style_manager.stdGrass) {
-			var tileX = x div tile_width;
-			var tileY = (tileYOffset) div tile_height;
+			var tileX = tileXOffset div tile_width;
+			var tileY = tileYOffset div tile_height;
 			obj_tile_style_manager.markTileAsBroken(tileX, tileY);
 		} else if (currentTile == 0) {
 			// Falling!
