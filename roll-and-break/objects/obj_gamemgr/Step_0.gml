@@ -1,6 +1,8 @@
 phaseFrame += 1;
 if (phase == gamePhase.playing) {
 	timeRemaining -= 1;
+} else if (phase == gamePhase.goal) {
+	audio_stop_sound(music_level);	
 } else if (phase == gamePhase.results) {
 	if (check_input(ord("A"), gp_face1, true)) {
 		if (phaseFrame < 220) {
