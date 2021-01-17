@@ -18,3 +18,11 @@ function meta_goto_level() {
 		suggestions: [rooms]
 	}
 }
+
+function sh_noclip() {
+	if (obj_roland.state != rolandState.noclip) {
+		obj_roland.state = rolandState.noclip;
+	} else {
+		obj_roland.state = rolandState.rolling;
+	}
+}

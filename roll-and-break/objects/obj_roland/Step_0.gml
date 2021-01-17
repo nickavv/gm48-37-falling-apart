@@ -32,4 +32,21 @@ switch (state) {
 		sprite_index = spr_roland_celebrate;
 		stopMoving();
 	}
+	case rolandState.noclip: {
+		stopMoving();
+		if (check_dir_left()) {
+			phy_speed_x = -5;
+		} else if (check_dir_right()) {
+			phy_speed_x = 5;
+		} else {
+			phy_speed_x = 0;
+		}
+		if (check_dir_up()) {
+			phy_speed_y = -5;
+		} else if (check_dir_down()) {
+			phy_speed_y = 5;
+		} else {
+			phy_speed_y = 0;
+		}
+	}
 }

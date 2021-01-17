@@ -2,7 +2,8 @@ enum rolandState {
 	ready,
 	rolling,
 	falling,
-	goal
+	goal,
+	noclip
 }
 enum rollDir {
 	d,
