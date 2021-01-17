@@ -50,6 +50,7 @@
     {"id":{"name":"sound_roland_goal","path":"sounds/sound_roland_goal/sound_roland_goal.yy",},"order":9,},
     {"id":{"name":"obj_tile_style_manager","path":"objects/obj_tile_style_manager/obj_tile_style_manager.yy",},"order":1,},
     {"id":{"name":"spr_roland_roll_l","path":"sprites/spr_roland_roll_l/spr_roland_roll_l.yy",},"order":3,},
+    {"id":{"name":"spr_title_screen","path":"sprites/spr_title_screen/spr_title_screen.yy",},"order":4,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":3,},
     {"id":{"name":"spr_ui_coin_got","path":"sprites/spr_ui_coin_got/spr_ui_coin_got.yy",},"order":8,},
     {"id":{"name":"spr_coin_get","path":"sprites/spr_coin_get/spr_coin_get.yy",},"order":2,},
@@ -107,6 +108,7 @@
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"tg_title","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
