@@ -17,6 +17,7 @@ xAxisHeld = false;
 yAxisHeld = false;
 
 coinsCollected = 0;
+timeRemaining = 0;
 
 function drawGameHud() {
 	for (var i = 0; i < 3; i++) {
@@ -26,4 +27,13 @@ function drawGameHud() {
 		}
 		draw_sprite(coinIcon, 0, 24 + (96 * i), 24);
 	}
+	
+	draw_sprite(spr_ui_stopwatch, 0, SCREEN_WIDTH - 144, 24);
+	draw_set_font(font_timer);
+	draw_set_color(make_color_rgb(41,35,53));
+	draw_set_halign(fa_center);
+	draw_text_transformed(SCREEN_WIDTH - 76, 52, 
+			string_format(timeRemaining / game_get_speed(gamespeed_fps), 2, 1),
+			1, 1, -18);
+	draw_set_halign(fa_left);
 }

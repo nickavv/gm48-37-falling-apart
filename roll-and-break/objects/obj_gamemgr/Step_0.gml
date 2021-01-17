@@ -1,4 +1,7 @@
 phaseFrame += 1;
+if (phase == gamePhase.playing) {
+	timeRemaining -= 1;
+}
 
 // reset controller axis held variable
 if (xAxisHeld) {

@@ -58,15 +58,17 @@ if (phase == gamePhase.ready) {
 	draw_set_alpha(min(1, phaseFrame/30));
 	draw_sprite(spr_result_screen_bg, 0, 0, 0);
 	
-	if (phaseFrame > 60) {
+	if (phaseFrame >= 60) {
 		for (var i = 0; i < 3; i++) {
 			if (phaseFrame >= (60 + (20 * i))) {
 				var coinIcon = spr_ui_coin_got;
+				var sfx = sound_coin;
 				if (coinsCollected < i + 1) {
-					if (phaseFrame == (60 + (20 * i))) {
-						audio_play_sound(sound_coin, 1, false);
-					}
 					coinIcon = spr_ui_coin_slot;
+					sfx = sound_whiff;
+				}
+				if (phaseFrame == (60 + (20 * i))) {
+					audio_play_sound(sfx, 1, false);
 				}
 				draw_sprite(coinIcon, 0, SCREEN_W_HALF - 140 + (96 * i), SCREEN_H_HALF - 100);
 			}

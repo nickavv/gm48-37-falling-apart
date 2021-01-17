@@ -8,4 +8,5 @@ if (instance_number(object_index) > 1) {
 	lastPhase = phase;
 	phaseFrame = 0;
 	coinsCollected = 0;
+	timeRemaining = obj_level_data.parSeconds * game_get_speed(gamespeed_fps);
 }
