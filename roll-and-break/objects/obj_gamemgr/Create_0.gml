@@ -10,3 +10,9 @@ phase = gamePhase.ready;
 lastPhase = phase;
 
 phaseFrame = 0;
+
+connectedGamepads = [];
+xAxisHeld = false;
+yAxisHeld = false;
+
+coinsCollected = 0;

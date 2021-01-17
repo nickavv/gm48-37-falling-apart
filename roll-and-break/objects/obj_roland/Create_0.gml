@@ -36,14 +36,14 @@ function handleRollDirectionInput() {
 	// Determine direction
 	var hStick = 0;
 	var vStick = 0;
-	if (keyboard_check(vk_left)) {
+	if (check_dir_left(false)) {
 		hStick = -1;
 		var forceAmt = -rollForce
 		if (phy_speed_x > 0) {
 			forceAmt -= antiSlipForce;
 		}
 		physics_apply_local_force(0, 0, forceAmt, 0);
-	} else if (keyboard_check(vk_right)) {
+	} else if (check_dir_right(false)) {
 		hStick = 1;
 		var forceAmt = rollForce
 		if (phy_speed_x < 0) {
@@ -51,14 +51,14 @@ function handleRollDirectionInput() {
 		}
 		physics_apply_local_force(0, 0, forceAmt, 0);
 	}
-	if (keyboard_check(vk_up)) {
+	if (check_dir_up(false)) {
 		vStick = -1;
 		var forceAmt = -rollForce;
 		if (phy_speed_y > 0) {
 			forceAmt -= antiSlipForce;
 		}
 		physics_apply_local_force(0, 0, 0, forceAmt);
-	} else if (keyboard_check(vk_down)) {
+	} else if (check_dir_down(false)) {
 		vStick = 1;
 		var forceAmt = rollForce;
 		if (phy_speed_y < 0) {
